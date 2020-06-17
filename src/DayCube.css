@@ -1,0 +1,16 @@
+
+._cube {
+    height: 20px;
+    width: 20px;
+    border: 1px solid #bbb;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+._circle {
+    height: 18px;
+    width: 18px;
+    line-height: 16px;
+    border: 1px solid #bbb;
+    border-radius: 50%;
+}
