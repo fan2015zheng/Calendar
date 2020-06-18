@@ -49,9 +49,9 @@ function daysInFeburary(year)
     var month = d.getMonth()
     if (month === 2)
     {
-        return 29
+        return 28
     }
-    return 28
+    return 29
 }
 
 function daysInMonth(year, month){
