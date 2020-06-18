@@ -8,11 +8,11 @@ function YearPicker() {
   let nextYear = year + 1
   return(<React.Fragment>
     <div className="text-center">
-      <a href="#" className="btn">&laquo; {preYear}</a> 
+      <button className="btn">&laquo; {preYear}</button> 
       &nbsp;
-      <a href="#" className="btn btn-info">2020</a> 
+      <button className="btn btn-info">2020</button> 
       &nbsp;
-      <a href="#" className="btn">{nextYear} &raquo;</a>
+      <button className="btn">{nextYear} &raquo;</button>
     </div>
   </React.Fragment>)
 }
