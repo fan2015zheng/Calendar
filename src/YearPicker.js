@@ -1,18 +1,14 @@
 import React from 'react'
 import './YearPicker.css'
 
-function YearPicker() {
-  const d = new Date()
-  let year = d.getFullYear();
-  let preYear = year - 1
-  let nextYear = year + 1
+function YearPicker({year, nextYear, prevYear}) {
   return(<React.Fragment>
     <div className="text-center">
-      <button className="btn">&laquo; {preYear}</button> 
+      <button onClick={prevYear} className="btn">&laquo; {year - 1}</button> 
       &nbsp;
-      <button className="btn btn-info">2020</button> 
+      <button className="btn btn-info">{year}</button> 
       &nbsp;
-      <button className="btn">{nextYear} &raquo;</button>
+      <button onClick={nextYear} className="btn">{year + 1} &raquo;</button>
     </div>
   </React.Fragment>)
 }
