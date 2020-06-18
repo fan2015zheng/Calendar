@@ -4,7 +4,7 @@ import MonthCard from './MonthCard'
 
 function YearPanel({year}) {
   return (<React.Fragment>
-    <h2 className="text-center">{`Calendar ${year}`}</h2>
+
     <div className="container">
       <div className="row">
         <div className={[
