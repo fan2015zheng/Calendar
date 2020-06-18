@@ -6,14 +6,14 @@ import Utils from './Utils.js'
 function MonthCard({year, month, bootstrapClass}) {
 return (
   <div className={bootstrapClass}>
-    <div className="_card">
+    <div className="mb-1">
         <div className="text-center">{MonthNames[month]}</div>
         <div>
           <table>
             <tbody>
               <MonthRow cubes={HeaderCubes} />
 
-              {[1,2,3,4,5].map((row) => {
+              {[1,2,3,4,5,6].map((row) => {
               const cubes = []
               for(let day=0; day<7; day++) {
                 const cube =  Utils.CalculateCube(year, month, day, row)
